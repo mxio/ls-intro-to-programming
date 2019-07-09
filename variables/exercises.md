@@ -31,6 +31,6 @@ puts "Enter your name"
 name = gets.chomp
 puts "Hello " + name
 
-10.times do |n|
-puts name
+10.times do |n|  
+  puts name  
 end
