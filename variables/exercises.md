@@ -62,4 +62,4 @@ y = 0
 end
 puts x
 ```
-Output: x is not accessible because it is in the inner scope
+Output: x is not accessible because it is inside the block
