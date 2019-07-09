@@ -42,3 +42,24 @@ puts "What is your last name?"
 last_name = gets.chomp
 
 puts first_name + " " + last_name
+
+### 5. 
+
+```
+x = 0
+3.times do
+  x += 1
+end
+puts x
+```
+Output: 3
+
+```
+y = 0
+3.times do
+  y += 1
+  x = y
+end
+puts x
+```
+Output: x is not accessible because it is in the inner scope
