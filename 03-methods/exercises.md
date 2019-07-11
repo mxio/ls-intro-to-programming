@@ -13,7 +13,7 @@ greeting("Bob")
 ```
 1. x = 2
 2
-
+=>nil
 2. puts x = 2
 2
 
@@ -24,7 +24,7 @@ greeting("Bob")
 "four"
 
 5. print something = "nothing"
-nothing
+nothing=>nil
 ```
 
 ### 3.Write a program that includes a method called multiply that takes two arguments and returns the product of the two numbers.
