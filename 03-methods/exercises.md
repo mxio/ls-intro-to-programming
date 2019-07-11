@@ -47,14 +47,14 @@ scream("Yippeee")
 Yippeee!!!! (wrong guess, correct answer is nil)
 
 ### 5. 1) Edit the method definition in exercise #4 so that it does print words on the screen. 2) What does it return now?
-
+```
 def scream(words)
   words = words + "!!!!"
-  return words
   puts words
 end
 
 scream("Yippeee")
+```
 
 ### 6. What does the following error message tell you?
 ```
