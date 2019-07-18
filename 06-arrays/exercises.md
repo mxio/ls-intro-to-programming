@@ -53,5 +53,5 @@ arr = [15, 7, 18, 5, 12, 8, 5, 1]
 ```
 
 1. 3 (this is the index of the number 5)
-2. 8 (returns the value at index 8)
+2. Enumerator
 3. 8
