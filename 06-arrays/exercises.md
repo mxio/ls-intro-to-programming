@@ -31,3 +31,11 @@ The program will return 1. The value of arr will be [["b"], ["b", 2], ["b", 3], 
 ["b", [1, 3, 3]] -> ["b"]
 The program will return [1,2,3]. The value of arr will be [["b"], ["a", [1, 2, 3]]]
 ```
+
+### 3. How do you return the word "example" from the following array?
+
+```
+arr = [["test", "hello", "world"],["example", "mem"]]
+```
+
+`arr.last.first` or `arr.last[0]` 
