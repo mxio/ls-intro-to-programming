@@ -39,3 +39,19 @@ arr = [["test", "hello", "world"],["example", "mem"]]
 ```
 
 `arr.last.first` or `arr.last[0]` 
+
+### 4. What does each method return in the following example?
+
+```
+arr = [15, 7, 18, 5, 12, 8, 5, 1]
+
+1. arr.index(5)
+
+2. arr.index[5]
+
+3. arr[5]
+```
+
+1. 3 (this is the index of the number 5)
+2. 8 (returns the value at index 8)
+3. 8
