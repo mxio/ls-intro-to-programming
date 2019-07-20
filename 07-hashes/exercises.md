@@ -45,3 +45,32 @@ puts hash_one
 ```
 
 Using `merge!`, the `merge!` expression returns `{1=>"d", 2=>"b", 3=>"c", 4=>"e"}` and hash_one is updated to `{1=>"d", 2=>"b", 3=>"c", 4=>"e"}`.
+
+### 3. Using some of Ruby's built-in Hash methods, write a program that loops through a hash and prints all of the keys. Then write a program that does the same thing except printing the values. Finally, write a program that prints both.
+
+Loops through and prints all the keys
+```
+letter_hash = {1 => "a", 2 => "b", 3 => "c"}
+
+letter_hash.each_key do |key|
+  puts key
+end
+```
+
+Loops through and prints all the keys 
+```
+letter_hash = {1 => "a", 2 => "b", 3 => "c"}
+
+letter_hash.each_value do |value|
+  puts value
+end
+```
+
+Prints both keys and values
+```
+letter_hash = {1 => "a", 2 => "b", 3 => "c"}
+
+letter_hash.each_pair do |key, value|
+  puts "#{key}: #{value}"
+end
+```
