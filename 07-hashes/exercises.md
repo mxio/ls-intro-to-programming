@@ -30,21 +30,21 @@ hash_one = {1 => "a", 2 => "b", 3 => "c"}
 hash_two = {1 => "d", 4 => "e"}
 
 hash_one.merge(hash_two)
+# {1=>"d", 2=>"b", 3=>"c", 4=>"e"}
 puts hash_one
-
-# outputs: {1=>"a", 2=>"b", 3=>"c"}
+# {1=>"a", 2=>"b", 3=>"c"}
 ```
-hash_one remains unchanged. `hash_one.merge(hash_two)` evaluates to `{1=>"d", 2=>"b", 3=>"c", 4=>"e"}`.
+
 
 ```
 hash_one = {1 => "a", 2 => "b", 3 => "c"}
 hash_two = {1 => "d", 4 => "e"}
 
 hash_one.merge!(hash_two)
+# {1=>"d", 2=>"b", 3=>"c", 4=>"e"}
 puts hash_one
+# {1=>"d", 2=>"b", 3=>"c", 4=>"e"}
 ```
-
-Using `merge!`, the `merge!` expression returns `{1=>"d", 2=>"b", 3=>"c", 4=>"e"}` and hash_one is updated to `{1=>"d", 2=>"b", 3=>"c", 4=>"e"}`.
 
 ### 3. Using some of Ruby's built-in Hash methods, write a program that loops through a hash and prints all of the keys. Then write a program that does the same thing except printing the values. Finally, write a program that prints both.
 
@@ -80,3 +80,12 @@ end
 `person = {name: 'Bob', occupation: 'web developer', hobbies: 'painting'`
 
 person[:name]
+
+### 5. What method could you use to find out if a Hash contains a specific value in it? Write a program to demonstrate this use.
+You can use the `has_value?` method
+
+```
+letter_hash = {1 => "a", 2 => "b", 3 => "c"}
+
+letter_hash.has_value?("c")
+```
