@@ -13,6 +13,7 @@ family = {  uncles: ["bob", "joe", "steve"],
 ```          
 
 ```
+# make sure to create new array per the question
 new_arr = family.select do |key, value| 
   key == sisters || key == brothers }
 end
