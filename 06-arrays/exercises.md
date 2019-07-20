@@ -53,7 +53,7 @@ arr = [15, 7, 18, 5, 12, 8, 5, 1]
 ```
 
 1. 3 (this is the index of the number 5)
-2. Enumerator
+2. Enumerator (I guessed 3 also, which is wrong)
 3. 8
 
 ### 5. What is the value of a, b, and c in the following program?
@@ -101,3 +101,4 @@ end
 p arr
 p new_arr
 ```
+Had to look at the solution for this.
