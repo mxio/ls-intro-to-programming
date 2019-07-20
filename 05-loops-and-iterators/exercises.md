@@ -18,7 +18,6 @@ input = ""
 while input != "STOP"
   puts "Enter anything"
   input = gets.chomp
-  puts "working"
  end
 ```
 
