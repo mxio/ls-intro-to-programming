@@ -42,3 +42,4 @@ def countdown(num)
   end
 end
 ```
+Had to look at solution for this. I didn't think of putting `num <= 0` as a condition.
