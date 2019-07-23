@@ -126,3 +126,12 @@ result.each_value do |v|
   p v
 end
 ```
+
+### 7. Given the following code...
+```
+x = "hi there"
+my_hash = {x: "some value"}
+my_hash2 = {x => "some value"}
+```
+
+my_hash uses a symbol for for the x key whereas my_hash2 uses the x variable as the key which stores the string "hi there".
