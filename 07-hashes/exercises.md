@@ -105,4 +105,24 @@ Write a program that prints out groups of words that are anagrams. Anagrams are 
 ["neon", "none"]
 (etc)
 ```
-(Couldn't solve this)
+
+Solution
+```
+result = {}
+
+words.each do |word|
+  key = word.split('').sort.join
+  # if there is already the key, then push the word into the array (this step happens after the else block)
+  if result.has_key?(key)
+    result[key].push(word)
+  else
+    # if there is no key yet, the key will have an array with the word in it, then when there is a key, the above statement will run
+    result[key] = [word]
+  end
+end
+
+result.each_value do |v|
+  puts "------"
+  p v
+end
+```
