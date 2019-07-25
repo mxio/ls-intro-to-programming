@@ -59,4 +59,4 @@ block.rb1:in `execute': wrong number of arguments (0 for 1) (ArgumentError)
 from test.rb:5:in `<main>'
 ```
 
-There is no & before 'block' to indicate that a block is being passed.
+There is no & before 'block' to indicate that a block is being passed. The program is expecting one argument but the block is not being passed as an argument.
