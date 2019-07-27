@@ -38,25 +38,71 @@ end
 ```
 
 ### 4. Append 11 to the end of the original array. Prepend 0 to the beginning.
+```
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+arr.push(11)
+arr.unshift(0)
+```
 
 ### 5. Get rid of 11. And append a 3.
+```
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+arr.push(11)
+arr.unshift(0)
+
+# Remove 11. Don't need to add the 11 in parenthesis. arr.pop returns 11 but removes the last item from the array already
+arr.pop
+
+# Append a 3
+arr.push(3)
+```
 
 ### 6. Get rid of duplicates without specifically removing any one value.
 
+```
+arr.uniq
+```
+
 ### 7. What's the major difference between an Array and a Hash?
+An array holds values at indexes whereas a hash holds key-value pairs.
 
 ### 8. Create a Hash using both Ruby syntax styles.
+```
+first_hash = {:a => 1}
+second_hash = {a: 1}
+```
 
 ### 9. Suppose you have a hash `h = {a:1, b:2, c:3, d:4}`
 ```
 1. Get the value of key `:b`.
+h[:b]
 
 2. Add to this hash the key:value pair `{e:5}`
+h[:e] = 5
 
 3. Remove all key:value pairs whose value is less than 3.5
+h.delete_if do |key, value|
+  value < 3.5
+end
 ```
 
 ### 10. Can hash values be arrays? Can you have an array of hashes? (give examples)
+Yes, hash values can be arrays
+```
+hash = {
+  a: 1,
+  b: 2,
+  c: [1, 2, 3]
+}
+
+hash[:c]
+```
+Arrays can have hashes too.
+```
+arr = [{a: 1, b: 2}, {c: 3, d: 4}]
+```
 
 ### 11. Look at several Rails/Ruby online API sources and say which one you like best and why.
 
