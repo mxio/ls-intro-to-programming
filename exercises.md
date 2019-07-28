@@ -105,6 +105,11 @@ arr = [{a: 1, b: 2}, {c: 3, d: 4}]
 ```
 
 ### 11. Look at several Rails/Ruby online API sources and say which one you like best and why.
+A few sources I like other than the official documentation for Ruby are https://apidock.com and https://rubydocs.org/.
+
+On https://rubydocs.org/, I can easily select from a dropdown of documentation for various versions for Ruby. Then I can find or search for methods or classes on the left sidebar. The documentation page for a method shows what the method returns, for example: `str.downcase → new_str`. This shows that downcase returns a new string, which is really helpful in understanding your code.
+
+Both apidock.com and rubydocs.org shows an example of how a method is used.
 
 ### 12. Given the following data structures. Write a program that moves the information from the array into the empty hash that applies to the correct person.
 
