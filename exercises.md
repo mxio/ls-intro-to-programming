@@ -149,3 +149,4 @@ else
   puts "These hashes are not the same!"
 end
 ```
+It will output: "These hashes are the same!"
