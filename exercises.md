@@ -131,6 +131,14 @@ contacts
 
 ### 13. Using the hash you created from the previous exercise, demonstrate how you would access Joe's email and Sally's phone number?
 
+```
+# Joe's email
+contacts["Joe Smith"][:email]
+
+# Sally's phone number
+contacts["Sally Johnson"][:phone]
+```
+
 ### 14. In exercise 12, we manually set the contacts hash values one by one. Now, programmatically loop or iterate over the contacts hash from exercise 12, and populate the associated data from the contact_data array. Hint: you will probably need to iterate over ([:email, :address, :phone]), and some helpful methods might be the Array shift and first methods.
 
 Note that this exercise is only concerned with dealing with 1 entry in the contacts hash, like this:
