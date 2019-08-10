@@ -189,6 +189,9 @@ Removing words beginning with "s" or "w":
 arr = ['snow', 'winter', 'ice', 'slippery', 'salted roads', 'white trees']
 
 arr.delete_if {|val| val.start_with?("s") || val.start_with?("w")}
+
+# simpler answer
+arr.delete_if { |word| word.start_with?("s", "w") }
 ```
 
 ### 16. Take the following array:
