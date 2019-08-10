@@ -174,6 +174,23 @@ move_data(contact_data, contacts)
 arr = ['snow', 'winter', 'ice', 'slippery', 'salted roads', 'white trees']
 ```
 
+Then recreate the arr and get rid of all of the words that start with "s" or starts with "w".
+
+
+Removing words beginning with "s":
+```
+arr = ['snow', 'winter', 'ice', 'slippery', 'salted roads', 'white trees']
+
+arr.delete_if {|val| val.start_with?("s")}
+```
+
+Removing words beginning with "s" or "w":
+```
+arr = ['snow', 'winter', 'ice', 'slippery', 'salted roads', 'white trees']
+
+arr.delete_if {|val| val.start_with?("s") || val.start_with?("w")}
+```
+
 ### 16. Take the following array:
 ```
 a = ['white snow', 'winter wonderland', 'melting ice',
