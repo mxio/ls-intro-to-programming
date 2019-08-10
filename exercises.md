@@ -148,6 +148,26 @@ contact_data = ["joe@email.com", "123 Main st.", "555-123-4567"]
 contacts = {"Joe Smith" => {}}
 ```
 
+```
+contact_data = ["joe@email.com", "123 Main st.", "555-123-4567"]
+contacts = {"Joe Smith" => {}}
+
+def move_data(arr, hash)
+  keys = [:email, :address, :phone]
+
+  # first, put the keys into the empty hash, then assign array values to the keys
+
+  # using [keys[index]] in the iterator creates each of the keys in the empty object
+  keys.each_with_index do |val, index|
+    hash["Joe Smith"][keys[index]] = arr[index]
+  end
+
+  hash
+end
+
+move_data(contact_data, contacts)
+```
+
 ### 15. Use Ruby's Array method delete_if and String method start_with? to delete all of the words that begin with an "s" in the following array.
 
 ```
